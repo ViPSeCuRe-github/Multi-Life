@@ -68,4 +68,4 @@ bot.readyCommand({
 
 
 const loader = new aoijs.LoadCommands(bot);
-loader.load(bot.cmd,'./main/') 
+loader.load(bot.cmd,'./commands/') 
