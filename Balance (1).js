@@ -4,7 +4,7 @@ aliases:["b","balance","wallet"],
 code: `$thumbnail[1;$userAvatar[$findUser[$message]]]
 $title[1;$username[$findUser[$message]] Balance]
 $description[1;
-$customEmoji[MultiLifeCoins;935528503363915826]MultiLife Coins: $getGlobalUserVar[Coins;$findUser[$message]]
+$customEmoji[MultiLifeCoinMultiLife Coins: $getGlobalUserVar[Coins;$findUser[$message]]
 MultiLife Premium Coins: $getGlobalUserVar[PremiumCoins;$findUser[$message]]
 MultiLife Giveaway Coins: $getGlobalUserVar[GiveawayCoins;$findUser[$message]]]
 $color[1;YELLOW]
