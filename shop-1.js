@@ -5,8 +5,8 @@ $textSplit[$sendMessage[{thumbnail:$userAvatar[$clientID]}
 {title: Multi Life Shop}
 {description: 
 🏠 | Shop
- | Attacking Items
- | Defense
+$customEmoji[missile;935528503363915826] | Attacking Items
+$customEmoji[tank;935528503363915826] | Defense
  | Gems
  | People
 }
