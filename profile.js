@@ -21,14 +21,14 @@ HP ❤️: $sum[$getGlobalUserVar[HP];$getGlobalUserVar[HeroHP]]]]
 $if[$advancedTextSplit[$getGlobalUserVar[ClanL;$mentioned[1;yes]];/;1]==0]
 This User Isn't In Any Clan
 $if[$isNumber[$advancedTextSplit[$getGlobalUserVar[ClanL;$mentioned[1;yes]];/;1]]==true]
-**Clan Stats**
+$addField[1;Clan Stats;
 Clan Name: $advancedTextSplit[$getGlobalUserVar[ClanL;$advancedTextSplit[$getGlobalUserVar[ClanL;$mentioned[1;yes]];/;1]];/;1]
-Position: $replaceText[$replaceText[$getGlobalUserVar[Clans;$mentioned[1;yes]];1;Co Leader];0;Member]]
-$endelseif
-$elseif[$isNumber[$advancedTextSplit[$getGlobalUserVar[ClanL;$mentioned[1;yes]];/;1]]==false]
-**Clan Stats**
+Position: $replaceText[$replaceText[$getGlobalUserVar[Clans;$mentioned[1;yes]];1;Co Leader];0;Member]]]
+$endif
+$if[$isNumber[$advancedTextSplit[$getGlobalUserVar[ClanL;$mentioned[1;yes]];/;1]]==false]
+$addField[1;**Clan Stats;
 Clan Name: $advancedTextSplit[$getGlobalUserVar[ClanL;$mentioned[1;yes]];/;1]
-Position: Leader]
+Position: Leader]]
 $endif
 $endif
 $color[1;ORANGE]
