@@ -1,7 +1,9 @@
 module.exports = ({
 
   name: "profile",
-
+  
+  $if: "v4",
+  
   aliases: ["p"],
 
   code: `$thumbnail[1;$userAvatar[$findUser[$message]]]
@@ -16,7 +18,19 @@ Total People: $getGlobalUserVar[People;$findUser[$message]]
 $addField[1;Power;
 Damage ⚔️: $sum[$getGlobalUserVar[Damage];$getGlobalUserVar[HeroDamage]]
 HP ❤️: $sum[$getGlobalUserVar[HP];$getGlobalUserVar[HeroHP]]]]
-
+$if[$advancedTextSplit[$getGlobalUserVar[ClanL;$mentioned[1;yes]];/;1]==0]
+This User Isn't In Any Clan
+$if[$isNumber[$advancedTextSplit[$getGlobalUserVar[ClanL;$mentioned[1;yes]];/;1]]==true]
+**Clan Stats**
+Clan Name: $advancedTextSplit[$getGlobalUserVar[ClanL;$advancedTextSplit[$getGlobalUserVar[ClanL;$mentioned[1;yes]];/;1]];/;1]
+Position: $replaceText[$replaceText[$getGlobalUserVar[Clans;$mentioned[1;yes]];1;Co Leader];0;Member]]
+$endelseif
+$elseif[$isNumber[$advancedTextSplit[$getGlobalUserVar[ClanL;$mentioned[1;yes]];/;1]]==false]
+**Clan Stats**
+Clan Name: $advancedTextSplit[$getGlobalUserVar[ClanL;$mentioned[1;yes]];/;1]
+Position: Leader]
+$endif
+$endif
 $color[1;ORANGE]
 $onlyIf[$getGlobalUserVar[Start;$findUser[$message]]==1;$username[$findUser[$message]] Hasn't Started Their Career Yet
 Type m!start To Start Your Career]`})
