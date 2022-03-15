@@ -14,7 +14,9 @@ Total Presidents: $getGlobalUserVar[Presidents;$findUser[$message]]
 Total Soldiers: $getGlobalUserVar[Soldiers;$findUser[$message]]
 Total People: $getGlobalUserVar[People;$findUser[$message]]
 $addField[1;Power;
-Damage ⚔️: $sum[$getGlobalUserVar[Damage];$getGlobalUserVar[HeroDamage]]]
+Damage ⚔️: $sum[$getGlobalUserVar[Damage];$getGlobalUserVar[HeroDamage]]
+HP ❤️: $sum[$getGlobalUserVar[HP];$getGlobalUserVar[HeroHP]]]]
+
 $color[1;ORANGE]
 $onlyIf[$getGlobalUserVar[Start;$findUser[$message]]==1;$username[$findUser[$message]] Hasn't Started Their Career Yet
 Type m!start To Start Your Career]`})
