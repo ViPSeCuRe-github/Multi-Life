@@ -1,17 +1,17 @@
 module.exports = ({
   name: "cinfo",
   code: `$if[$advancedTextSplit[$getGlobalUserVar[Clans;$message[1]];?;1]!=0]
-$thumbnail[$advancedTextSplit[$getGlobalUserVar[Clans;$message[1]];?;1]]
+$thumbnail[1;$advancedTextSplit[$getGlobalUserVar[Clans;$message[1]];?;1]]
 $endif
-$addField[Total Members;
+$addField[1;Total Members;
 $advancedTextSplit[$getGlobalUserVar[ClanL;$message[1]];/;2]]
-$addField[Clan Co Leaders;
+$addField[1;Clan Co Leaders;
 $advancedTextSplit[$getGlobalUserVar[ClanL;$message[1]];/;5]]
-$addField[Clan Leader;
+$addField[1;Clan Leader;
 $username[$message[1]]]
-$addField[Clan Points;
+$addField[1;Clan Points;
 $getGlobalUserVar[ClanPoints;$message[1]]]
-$addField[Clan Name;
+$addField[1;Clan Name;
 $advancedTextSplit[$getGlobalUserVar[ClanL;$message[1]];/;1]]
 $color[#FFFF00]
 $onlyIf[$advancedTextSplit[$getGlobalUserVar[ClanL;$message[1]];/;1]!=0;That User Doesn't Own Any Clan]
