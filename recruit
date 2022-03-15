@@ -8,7 +8,7 @@ $setGlobalUserVar[GameHero;Creo]
 $onlyIf[$getGlobalUserVar[Coins]>=100000;You Don't Have 100,000 In Your Wallet🤔]
 $endIf
 $if[$toLowerCase[$message]==fironic]
-You Unlocked Creo! Congratulations🎉
+You Unlocked Fironic! Congratulations🎉
 $setGlobalUserVar[Coins;$sub[$getGlobalUserVar[Coins];500000]
 $setGlobalUserVar[GameHero;Fironic]
 $onlyIf[$getGlobalUserVar[Coins]>=500000;You Don't Have 500,000 In Your Wallet🤔]
