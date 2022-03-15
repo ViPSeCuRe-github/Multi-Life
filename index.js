@@ -44,7 +44,9 @@ bot.variables({
   Defense: "0",
   Attack: "0",
   Most: "0",
-  Least: "0"
+  Least: "0",
+  GameHero: "None",
+  CustomHero: "None"
 })
 
 //Command Example
