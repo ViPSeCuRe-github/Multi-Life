@@ -5,6 +5,8 @@ module.exports = ({
 You Unlocked Creo! Congratulations🎉
 $setGlobalUserVar[Coins;$sub[$getGlobalUserVar[Coins];100000]]
 $setGlobalUserVar[GameHero;Creo]
+$setGlobalUserVar[HeroDamage;50]
+$setGlobalUserVar[HeroHP;200]
 $onlyIf[$getGlobalUserVar[Coins]>=100000;You Don't Have 100,000 In Your Wallet🤔]
 $onlyIf[$getGlobalUserVar[GameHero]!=Creo;You Already Have Creo]
 $endIf
