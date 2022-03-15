@@ -7,11 +7,18 @@ module.exports = ({
   Price - 100,000 
   Damage ⚔️ - 50
   HP ❤️ - 300]
+  $addField[1;Fironic;
+  Price - 500,000
+  Damage ⚔️ - 100
+  HP ❤️ - 500]
   $addField[1;Monstalio;
   Price - 750,000
   Damage ⚔️ - 200
-  HP ❤️ - ]
-  $addField[1;Mystify]
+  HP ❤️ - 800]
+  $addField[1;Mystify;
+  Price - 1,000,000
+  Damage ⚔️ - 300
+  HP ❤️ - 1000]
   
   ]`
   })
