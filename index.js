@@ -7,7 +7,7 @@ const bot = new aoijs.Bot({
 
    token: "OTMwNTE4MDE0MjU4OTgzMDMy.Yd3Cbg.vvM2dF0nkYYg772dSPl8phU2mq4",
 
-   prefix: "m!",
+   prefix: ["m!","$getServerVar[Prefix]"],
 
    intents: "all",
 
@@ -44,7 +44,8 @@ bot.variables({
   Defense: "0",
   Attack: "0",
   Most: "0",
-  Least: "0"
+  Least: "0",
+  Prefix: "0"
 })
 
 //Command Example
