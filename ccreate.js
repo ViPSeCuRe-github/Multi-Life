@@ -2,6 +2,8 @@ module.exports = ({
   name: "ccreate",
   code: `You Successfully Created A Clan With Name $message
 $setGlobalUserVar[ClanL;$message/1/0/1/0]
+$setGlobalUserVar[ClanMembersName;
+O $authorID P]
 $setGlobalUserVar[Coins;$sub[$getGlobalUserVar[Coins];25000]]
 $onlyIf[$message!=;Invalid Format❌
 c!ccreate ❌
