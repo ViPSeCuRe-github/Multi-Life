@@ -4,7 +4,7 @@ module.exports = ({
   code: `$if[$toLowerCase[$message]==creo]
 You Unlocked Creo! Congratulations🎉
 $setGlobalUserVar[Coins;$sub[$getGlobalUserVar[Coins];100000]]
-$setGlobalUserVar[Hero;Creo]
+$setGlobalUserVar[GameHero;Creo]
 $onlyIf[$getGlobalUserVar[Coins]>=100000;You Don't Have 100,000 In Your Wallet🤔]
 $endIf`
   })
