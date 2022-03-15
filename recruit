@@ -10,6 +10,7 @@ $setGlobalUserVar[HeroHP;300]
 $onlyIf[$getGlobalUserVar[Coins]>=100000;You Don't Have 100,000 In Your Wallet🤔]
 $onlyIf[$getGlobalUserVar[GameHero]!=Creo;You Already Have Creo]
 $endIf
+
 $if[$toLowerCase[$message]==fironic]
 You Unlocked Fironic! Congratulations🎉
 $setGlobalUserVar[Coins;$sub[$getGlobalUserVar[Coins];500000]
@@ -18,5 +19,27 @@ $setGlobalUserVar[HeroDamage;100]
 $setGlobalUserVar[HeroHP;500]
 $onlyIf[$getGlobalUserVar[Coins]>=500000;You Don't Have 500,000 In Your Wallet🤔]
 $onlyIf[$getGlobalUserVar[GameHero]!=Fironic;You Already Have Fironic]
-$endIf`
+$endIf
+
+$if[$toLowerCase[$message]==monstalio]
+You Unlocked Monstalio! Congratulations🎉
+$setGlobalUserVar[Coins;$sub[$getGlobalUserVar[Coins];750000]
+$setGlobalUserVar[GameHero;Monstalio]
+$setGlobalUserVar[HeroDamage;200]
+$setGlobalUserVar[HeroHP;800]
+$onlyIf[$getGlobalUserVar[Coins]>=750000;You Don't Have 750,000 In Your Wallet🤔]
+$onlyIf[$getGlobalUserVar[GameHero]!=Monstalio;You Already Have Monstalio]
+$endIf
+
+$if[$toLowerCase[$message]==Mystify]
+You Unlocked Mystify! Congratulations🎉
+$setGlobalUserVar[Coins;$sub[$getGlobalUserVar[Coins];1000000]
+$setGlobalUserVar[GameHero;Mystify]
+$setGlobalUserVar[HeroDamage;300]
+$setGlobalUserVar[HeroHP;1000]
+$onlyIf[$getGlobalUserVar[Coins]>=1000000;You Don't Have 1,000,000 In Your Wallet🤔]
+$onlyIf[$getGlobalUserVar[GameHero]!=Mystify;You Already Have Mystify]
+$endIf
+
+`
   })
