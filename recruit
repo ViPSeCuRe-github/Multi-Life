@@ -6,7 +6,7 @@ You Unlocked Creo! Congratulations🎉
 $setGlobalUserVar[Coins;$sub[$getGlobalUserVar[Coins];100000]]
 $setGlobalUserVar[GameHero;Creo]
 $setGlobalUserVar[HeroDamage;50]
-$setGlobalUserVar[HeroHP;200]
+$setGlobalUserVar[HeroHP;300]
 $onlyIf[$getGlobalUserVar[Coins]>=100000;You Don't Have 100,000 In Your Wallet🤔]
 $onlyIf[$getGlobalUserVar[GameHero]!=Creo;You Already Have Creo]
 $endIf
@@ -14,6 +14,8 @@ $if[$toLowerCase[$message]==fironic]
 You Unlocked Fironic! Congratulations🎉
 $setGlobalUserVar[Coins;$sub[$getGlobalUserVar[Coins];500000]
 $setGlobalUserVar[GameHero;Fironic]
+$setGlobalUserVar[HeroDamage;100]
+$setGlobalUserVar[HeroHP;500]
 $onlyIf[$getGlobalUserVar[Coins]>=500000;You Don't Have 500,000 In Your Wallet🤔]
 $onlyIf[$getGlobalUserVar[GameHero]!=Fironic;You Already Have Fironic]
 $endIf`
