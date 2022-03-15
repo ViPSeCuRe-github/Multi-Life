@@ -41,7 +41,7 @@ bot.variables({
   Stone: "0",
   Gem: "0",
   Diamond: "0",
-  Defense: "0",
+  HP: "0",
   Damage: "0",
   HeroDamage: "0",
   HeroHP: "0",
