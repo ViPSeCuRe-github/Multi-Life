@@ -1,4 +1,7 @@
 module.exports = ({
   name: "recruit",
-  code: ``
+  $if: "v4",
+  code: `$if[$message==Creo]
+You Unlocked Creo! Congratulations🎉
+$endIf`
   })
