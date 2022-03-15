@@ -50,6 +50,11 @@ bot.variables({
   GameHero: "None",
   CustomHero: "None",
   Prefix: "m!",
+  Clans: "0",
+  ClanL: "0",
+  ClanPoints: "0",
+  Gems: "0",
+  ClanMembersName: "0",
 })
 
 //Command Example
