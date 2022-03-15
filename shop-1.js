@@ -1,14 +1,14 @@
 module.exports = ({
   name: "shop",
-  code: `$reactionCollector[$splitText[1];$authorID;1d;🏠,$customEmoji[elixir;837214550255861760],$customEmoji[cannoncart;837214550255861760],$customEmoji[gems;837214550255861760],$customEmoji[INTERSHIP;837214550255861760];shop,resources,defense,gems,in-game;yes]
+  code: `$reactionCollector[$splitText[1];$authorID;1d;🏠,$customEmoji[missile;935528503363915826],$customEmoji[tank;935528503363915826],$customEmoji[gems;935528503363915826],🫂;shop,attack,defense,gems,people;yes]
 $textSplit[$sendMessage[{thumbnail:$userAvatar[$clientID]}
 {title: Multi Life Shop}
 {description: 
 🏠 | Shop
-$customEmoji[missile;935528503363915826] | Attacking Items
+$customEmoji[missile;935528503363915826] | Attack
 $customEmoji[tank;935528503363915826] | Defense
- | Gems
- | People
+$customEmoji[gems;935528503363915826] | Gems
+🫂| People
 }
 {footer: You Are In Shop Page};yes]]`
   })
