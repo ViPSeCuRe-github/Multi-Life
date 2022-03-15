@@ -1,7 +1,7 @@
 module.exports = ({
-  name: "recruit",
+  name: "hshop",
   code: `$thumbnail[$botAvatae]
-  $title[1; Recruitment Of Heroes ]
+  $title[1; Shop Of Heroes ]
   $description[1;
   $addField[1;Creo;
   Price - 100,000 
@@ -18,7 +18,8 @@ module.exports = ({
   $addField[1;Mystify;
   Price - 1,000,000
   Damage ⚔️ - 300
-  HP ❤️ - 1000]
-  
-  ]`
+  HP ❤️ - 1000]]
+  $footer[1;Type Recruit Hero-Name To Recruit A Hero
+  Example: $getServerVar[Prefix]Recruit Creo]
+ `
   })
