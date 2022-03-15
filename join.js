@@ -4,6 +4,8 @@ module.exports = ({
 $setGlobalUserVar[ClanMembersName;
 $getGlobalUserVar[ClanMembersName;$message[1]]
 O $authorID P]
+$sendDM[$message[1];$username[$authorID]#$discriminator[$authorID] Joined Your Clan
+Member ID: $authorID]
 $textSplit[$getGlobalUserVar[ClanL;$message[1]];/]$setGlobalUserVar[ClanL;$splitText[1]/$sum[$splitText[2];1]/$splitText[3]/1/$splitText[5];$message[1]]$textSplit[$getGlobalUserVar[ClanL;$message[1]];/]
 $textSplit[$getGlobalUserVar[ClanL;$authorID];/]$setGlobalUserVar[ClanL;$message[1];$authorID]$textSplit[$getGlobalUserVar[ClanL;$authorID];/]
 $onlyIf[$advancedTextSplit[$getGlobalUserVar[ClanL];/;1]==0;You Are Already In A Clan]
