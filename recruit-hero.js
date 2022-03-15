@@ -8,7 +8,10 @@ module.exports = ({
   Damage ⚔️ - 50
   HP ❤️ - 300]
   $addField[1;Monstalio;
-  Price - 500,000 
-  Damage ⚔️ - 100
-  HP ❤️ - 500]`
+  Price - 750,000
+  Damage ⚔️ - 200
+  HP ❤️ - ]
+  $addField[1;Mystify]
+  
+  ]`
   })
