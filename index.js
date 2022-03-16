@@ -55,6 +55,9 @@ bot.variables({
   ClanPoints: "0",
   Gems: "0",
   ClanMembersName: "0",
+  Aircraft: "0",
+  Tank: "0",
+  Medpack: "0"
 })
 
 //Command Example
