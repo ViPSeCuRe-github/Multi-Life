@@ -13,6 +13,7 @@ module.exports = ({
   $if[$toLowerCase[$message[1]]==soldier]
   You Have Created A Soldier In Your Planet
   $setGlobalUserVar[Soldier;$sum[$getGlobalUserVar[Soldier];$message[2]]]
+  $setGlobalUserVar[Damage;$sum[$getGlobalUserVar[Damage];$multi[1;$message[2]]]]
   $setGlobalUserVar[Population;$sum[$getGlobalUserVar[Population];$multi[10;$message[2]]]]
   $setGlobalUserVar[Coins;$sub[$getGlobalUserVar[Coins];$multi[$message[2];1000]]]
   $onlyIf[$getGlobalUserVar[Coins]>=$multi[$message[2];1000];You Don't Have $multi[$message[2];1000] Multi-Life Coins In Your Wallet]
