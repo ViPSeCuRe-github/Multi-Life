@@ -16,7 +16,7 @@ module.exports = ({
   $setGlobalUserVar[Population;$sum[$getGlobalUserVar[Population];$multi[10;$message[2]]]]
   $setGlobalUserVar[Coins;$sub[$getGlobalUserVar[Coins];$multi[$message[2];1000]]]
   $onlyIf[$getGlobalUserVar[Coins]>=$multi[$message[2];1000];You Don't Have $multi[$message[2];1000] Multi-Life Coins In Your Wallet]
-  $onlyIf[$isNumber[$message[2]]==true;Please Mention How Many Villagers You Wanna Buy
+  $onlyIf[$isNumber[$message[2]]==true;Please Mention How Many Soldiers You Wanna Buy
   Example: create soldier 1]
   $endif
   $onlyIf[$checkContains[$toLowerCase[$message[1]];villager;president;soldier]==true;$message[1] Is Not A Valid ID]
