@@ -23,7 +23,7 @@ module.exports = ({
   $setGlobalUserVar[Coins;$sub[$getGlobalUserVar[Coins];8000]]
   $setGlobalUserVar[Medpack;$sum[$getGlobalUserVar[Medpack];1]]
   $setGlobalUserVar[HP;$sum[$getGlobalUserVar[HP];5]
-  $onlyIf[$getGlobalUserVar[Aircraft]<=10;You Already Have Bought The Maximum Limit Of MedPacks]
+  $onlyIf[$getGlobalUserVar[Medpack]<=10;You Already Have Bought The Maximum Limit Of MedPacks]
   $onlyIf[$getGlobalUserVar[Coins]>=8000;You Don't Have 8,000 Multi-Life Coins]
   $endIf`
   })
