@@ -6,10 +6,10 @@ $setGlobalUserVar[Clans;0;$message[1]]
 $if[$isNumber[$advancedTextSplit[$getGlobalUserVar[ClanL];/;1]]==true]
 $setGlobalUserVar[ClanL;$splitText[1]/$sub[$splitText[2];1]/$splitText[3]/$splitText[4]/$splitText[5];$getGlobalUserVar[ClanL]]
 $textSplit[$getGlobalUserVar[ClanL;$getGlobalUserVar[ClanL]];/]
-$else
+$endif
+$if[$isNumber[$advancedTextSplit[$getGlobalUserVar[ClanL];/;1]]!=true]
 $setGlobalUserVar[ClanL;$splitText[1]/$sub[$splitText[2];1]/$splitText[3]/$splitText[4]/$splitText[5]]
 $textSplit[$getGlobalUserVar[ClanL];/]
-$endelseif
 $endif
 $onlyIf[$getGlobalUserVar[Clans;$message[1]]==0;You Can't Kick A Co Leader
 First Demote Him Then Try Kicking Him]
