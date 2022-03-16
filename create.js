@@ -20,6 +20,6 @@ module.exports = ({
   $onlyIf[$isNumber[$message[2]]==true;Please Mention How Many Soldiers You Wanna Buy
   Example: create soldier 1]
   $endif
-  $onlyIf[$checkContains[$toLowerCase[$message[1]];villager;president;soldier]==true;$message[1] Is Not A Valid ID]
+  $onlyIf[$checkContains[$toLowerCase[$message[1]];villager;soldier]==true;$message[1] Is Not A Valid ID]
   $onlyIf[$message!=;Please Mention Whom You Wanna Create]`
   })
