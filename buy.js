@@ -11,11 +11,19 @@ module.exports = ({
   $onlyIf[$getGlobalUserVar[Coins]>=10000;You Don't Have 10,000 Multi-Life Coins]
   $endIf
   $if[$toLowerCase[$message]==tank]
-  You Have Bought An Aircraft For 15,000 MULTI-LIFE Coins
+  You Have Bought A Tank For 15,000 MULTI-LIFE Coins
   $setGlobalUserVar[Coins;$sub[$getGlobalUserVar[Coins];15000]]
   $setGlobalUserVar[Tank;$sum[$getGlobalUserVar[Tank];1]]
   $setGlobalUserVar[Damage;$sum[$getGlobalUserVar[Damage];15]]
   $onlyIf[$getGlobalUserVar[Tank]<=10;You Already Have Bought The Maximum Limit Of Tanks]
   $onlyIf[$getGlobalUserVar[Coins]>=15000;You Don't Have 15,000 Multi-Life Coins]
+  $endIf
+  $if[$toLowerCase[$message]==medpack]
+  You Have Bought A Medpack For 8,000 MULTI-LIFE Coins
+  $setGlobalUserVar[Coins;$sub[$getGlobalUserVar[Coins];8000]]
+  $setGlobalUserVar[Medpack;$sum[$getGlobalUserVar[Medpack];1]]
+  $setGlobalUserVar[HP;$sum[$getGlobalUserVar[HP];5]
+  $onlyIf[$getGlobalUserVar[Aircraft]<=10;You Already Have Bought The Maximum Limit Of MedPacks]
+  $onlyIf[$getGlobalUserVar[Coins]>=8000;You Don't Have 8,000 Multi-Life Coins]
   $endIf`
   })
