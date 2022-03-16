@@ -40,6 +40,8 @@ $setGlobalUserVar[HeroHP;1000]
 $onlyIf[$getGlobalUserVar[Coins]>=1000000;You Don't Have 1,000,000 In Your Wallet🤔]
 $onlyIf[$getGlobalUserVar[GameHero]!=Mystify;You Already Have Mystify]
 $endIf
+$onlyIf[$checkContains[$toLowerCase[$message[1]];fironic;creo;monstalio;mystify]==true;$message[1] Is Not A Valid D]
+  $onlyIf[$message!=;Please Mention Whom You Wanna Create]
 
 `
   })
