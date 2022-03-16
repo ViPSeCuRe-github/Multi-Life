@@ -25,5 +25,7 @@ module.exports = ({
   $setGlobalUserVar[HP;$sum[$getGlobalUserVar[HP];5]
   $onlyIf[$getGlobalUserVar[Medpack]<=10;You Already Have Bought The Maximum Limit Of MedPacks]
   $onlyIf[$getGlobalUserVar[Coins]>=8000;You Don't Have 8,000 Multi-Life Coins]
-  $endIf`
+  $endIf
+  $onlyIf[$checkContains[$toLowerCase[$message[1]];aircraft;tank;medpack]==true;$message[1] Is Not A Valid ID]
+  $onlyIf[$message!=;Please Mention Whom You Wanna Create]`
   })
