@@ -11,7 +11,7 @@ module.exports = ((
   $addField[1;Shop;
   \`shop\`,\`hshop\`,\`buy <item-id>\`,\`create <item-id>\`,\`recruit <hero-name>\`]
   $addField[1;User Details;
-  \`profile\`,\`bal\`,\`hero\`
+  \`profile\`,\`bal\`,\`hero\`]
   $addField[1;Earn;
   \`work\`,\`daily\`]
   ]
