@@ -12,6 +12,8 @@ module.exports = ((
   \`shop\`,\`hshop\`,\`buy <item-id>\`,\`create <item-id>\`,\`recruit <hero-name>\`]
   $addField[1;Earn;
   \`work\`,\`daily\`]
-  ]`
+  ]
+  $footer[1; Can't Understand? don't worry, use \`guide\` command to have a brief explanation about everything!]
+  $color[1;BLACK]`
   })
   
