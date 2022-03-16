@@ -7,9 +7,11 @@ module.exports = ((
   \`Battle,Story Command,Clan Chat & Global Chat\`
   ]
   $addField[1;Clan;
-  \`ccreate <clan-name>\`,\`cinfo <ownerID>\`,\`join <ownerID>\`,\`leave\`]
+  \`ccreate <clan-name>\`,\`cinfo <ownerID>\`,\`join <ownerID>\`,\`leave\`,\`delete <clan-name>\`,\`demote <user-id>\`,\`promote <user-id>\`,\`ckick <user-id>\`,\`clanquest\`,\`rename <new-clan-name>\`]
   $addField[1;Shop;
   \`shop\`,\`hshop\`,\`buy <item-id>\`,\`create <item-id>\`,\`recruit <hero-name>\`]
+  $addField[1;User Details;
+  \`profile\`,\`bal\`,\`hero\`
   $addField[1;Earn;
   \`work\`,\`daily\`]
   ]
