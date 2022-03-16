@@ -5,7 +5,7 @@ const aoimongo = require("aoi.mongo")
 
 const bot = new aoijs.Bot({
 
-   token: "OTMwNTE4MDE0MjU4OTgzMDMy.Yd3Cbg.vvM2dF0nkYYg772dSPl8phU2mq4",
+   token: process.env.token,
 
    prefix: ["m!","$getServerVar[Prefix]"],
 
