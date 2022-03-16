@@ -21,5 +21,6 @@ module.exports = ({
   HP ❤️ - 1000]]
   $footer[1;Type Recruit Hero-Name To Recruit A Hero
   Example: $getServerVar[Prefix]Recruit Creo]
+  $color[1;BLUE]
  `
   })
