@@ -1,5 +1,5 @@
 module.exports = ({
- name: "clan",
+ name: "clanquest",
  code: `
 Succesfully Completed Your Clan Quest
 Your Clan Points Has Been Increased✌️
